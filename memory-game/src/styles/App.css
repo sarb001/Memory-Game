@@ -1,0 +1,37 @@
+
+.main-app{
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgb(170, 194, 194);
+    justify-content: center;
+    padding: 20px;
+}
+button{
+    padding: 10px;
+    background-color: rgb(255, 247, 11);
+    font-size:larger;
+}
+.main-side{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card-container{
+    margin: 30px 6px;
+}
+.card .front{
+     position: absolute;
+     transform: rotateY(90deg);
+}
+.flipped .front{
+    transform: rotateY(0deg);
+}
+
+.card .back{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+.flipped .back{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
